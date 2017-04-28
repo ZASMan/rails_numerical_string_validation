@@ -1,6 +1,6 @@
 # Ruby on Rails: Numerical String Validation
-# Disclaimer: I don't claim this to be the most effective way to validate a 'numerical string' in rails.
-# Instead, I wanted to share this to hopefully save people some trouble.
+Disclaimer: I don't claim this to be the most effective way to validate a 'numerical string' in rails.
+Instead, I wanted to share this to hopefully save people some trouble.
 Suppose you have a certain value in your rails model such as a social security number, passport number, etc.
 At first thought one might try to save this as an 'integer' datatype. A few problems with this though...
 1. Instead of validating for length, you'll have to validate by the integer value (must be greater than or less than).
