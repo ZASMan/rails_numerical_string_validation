@@ -7,7 +7,7 @@ At first thought one might try to save this as an 'integer' datatype. A few prob
 2. Most importantly, anything that begins with a 000 will not save properly because integers in Ruby cannot begin with 0.
 - For example, lets say you have a value which you want to save as an integer, like '001234'.
 - This won't save as '001234', and it might not be apparent if you weren't aware that Try this in the rails console. If you type in a variable like `number = 001234`, Ruby will interpret it as 668.
-- Read [this StackOverflow post](http://stackoverflow.com/questions/28545559/how-to-work-with-leading-zeros-in-integers) for more information!
+- What is the science behind this? It's all in Ruby's Integer class! Read [this StackOverflow post](http://stackoverflow.com/questions/28545559/how-to-work-with-leading-zeros-in-integers) for more information!
 3. To get around this, save it as a string! Suppose you have a model field that can only be 12 numbers. An example validation could be as follows:
 
 ```
