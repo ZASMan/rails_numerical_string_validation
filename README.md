@@ -30,7 +30,7 @@ class ExampleModel < ActiveRecord::Base
 end
 ```
 
-4. In this case, I simply created an array of numbers where the numbers are saved as strings ['0', '1', '2'] and then broke the model_field into an array, and compared the two arrays. If the model_field contains a value that isn't one of the numerical string values, it throws an error. voila! <br>
+4. In this case, I simply created an array of numbers where the numbers are saved as strings ['0', '1', '2'] and then broke the model_field into an array, and compared the two arrays. If the model_field contains a value that isn't one of the numerical string values, it throws an error. voila! Saving it as a string can also make your other validatiosn simpler because you can validate the length like a string, rather than setting a minimum or maximum value for the number. <br>
 
 Hope this helps someone!
 
